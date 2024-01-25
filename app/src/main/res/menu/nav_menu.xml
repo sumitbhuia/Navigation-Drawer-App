@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view">
+    <!--ShowIn is important-->
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+        android:title="🏠 Home"/>
+    <item
+        android:id="@+id/message"
+        android:title="📬 Messages"/>
+    <item
+        android:id="@+id/settings"
+        android:title="⚙️ Settings"/>
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="💠 Login"
+                    android:id="@+id/login"/>
+            </group>
+        </menu>
+    </item>
+</menu>
+
